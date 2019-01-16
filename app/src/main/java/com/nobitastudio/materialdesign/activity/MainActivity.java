@@ -31,6 +31,7 @@ import com.nobitastudio.materialdesign.util.HttpUtil;
 import java.io.IOException;
 import java.util.List;
 
+import butterknife.ButterKnife;
 import cn.jpush.android.api.JPushInterface;
 import de.hdodenhof.circleimageview.CircleImageView;
 import okhttp3.Call;
@@ -76,6 +77,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
         JPushInterface.setDebugMode(true);
         JPushInterface.init(this);
         init();
