@@ -31,6 +31,7 @@ import com.nobitastudio.materialdesign.util.HttpUtil;
 import java.io.IOException;
 import java.util.List;
 
+import cn.jpush.android.api.JPushInterface;
 import de.hdodenhof.circleimageview.CircleImageView;
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -75,7 +76,8 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        JPushInterface.setDebugMode(true);
+        JPushInterface.init(this);
         init();
     }
 
