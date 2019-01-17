@@ -18,7 +18,7 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -67,5 +67,15 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.4'
     implementation 'com.jakewharton:butterknife:10.0.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    // 基础工具类
+    implementation 'com.blankj:utilcode:1.11.1'
+    // 混淆依赖
+    implementation "com.blankj:free-proguard:0.0.10"
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    implementation 'org.apache.commons:commons-lang3:3.4'
+    // QMUI
+    implementation 'com.qmuiteam:qmui:1.1.3'
+
+
 
 }
